@@ -12,7 +12,6 @@ import house_6 from "../../images/houses/house_6.png";
 import house_7 from "../../images/houses/house_7.png";
 import house_8 from "../../images/houses/house_8.png";
 
-
 import Card from "./Card";
 
 const Main = () => {
@@ -37,6 +36,17 @@ const Main = () => {
           <Card src={house_7} className={classes.card} alt="Desert House" />
           <Card src={house_8} className={classes.card} alt="Desert House" />
         </ul>
+      </article>
+      <article className={classes.metabnb__nfts}>
+        <div className={classes.metabnb__main}>
+          <h2 className={classes.matabnb__title}>Metabnb NFTs</h2>
+          <p className={classes.metabnb__description}>
+            Discover our NFT gift cards collection. Loyal customers gets amazing
+            gift cards which are traded as NFTs. These NFTs gives our cutomer
+            access to loads of our exclusive services.
+          </p>
+          <button className={classes.learn__more__btn}>Learn more</button>
+        </div>
       </article>
     </main>
   );
