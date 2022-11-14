@@ -1,0 +1,28 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr .8fr;
+  padding: 43px 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__items {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 28px;
+  text-align: center;
+}
+
+.nav__item {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.btn__connect {
+  color: #fff;
+  padding: 15px 25px;
+  justify-self: end;
+  border: none;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  border-radius: 10px;
+}
