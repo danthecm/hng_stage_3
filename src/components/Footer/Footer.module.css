@@ -1,9 +1,14 @@
 .footer {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
   height: 322px;
-  background: #1d1d1e;
+  grid-template-columns: auto;
   padding: 58px 100px;
+  background: #1d1d1e;
+}
+
+.footer__main {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
   color: #ffffff;
   justify-content: center;
 }
@@ -30,5 +35,12 @@
 
 .social__icons i {
   font-size: 18px;
+  color: #ffffff;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
   color: #ffffff;
 }
