@@ -34,6 +34,8 @@
   height: 774px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
+  justify-content: center;
+  grid-row: auto;
   padding: 186px 100px;
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   border: 1px solid #000000;
@@ -43,7 +45,7 @@
 .metabnb__main {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 30px;
+  align-items: center;
 }
 
 .matabnb__title {
@@ -61,15 +63,17 @@
   font-size: 18px;
   line-height: 35px;
   max-width: 85%;
-
   background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin-top: -100px;
 }
 
 .learn__more__btn {
   width: 156px;
+  height: 48px;
+  margin-top: -100px;
   border: none;
   background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
   border-radius: 10px;
@@ -78,4 +82,9 @@
   line-height: 19px;
   text-align: center;
   color: #a02279;
+}
+
+.metabnb__img {
+  width: 704px;
+  height: 574.85px;
 }

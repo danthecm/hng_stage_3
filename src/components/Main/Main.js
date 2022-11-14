@@ -11,6 +11,7 @@ import house_5 from "../../images/houses/house_5.png";
 import house_6 from "../../images/houses/house_6.png";
 import house_7 from "../../images/houses/house_7.png";
 import house_8 from "../../images/houses/house_8.png";
+import metabnb_img from "../../images/metabnb_img.png";
 
 import Card from "./Card";
 
@@ -46,6 +47,9 @@ const Main = () => {
             access to loads of our exclusive services.
           </p>
           <button className={classes.learn__more__btn}>Learn more</button>
+        </div>
+        <div>
+            <img src={metabnb_img} alt="Metabnb NFTs"/>
         </div>
       </article>
     </main>
