@@ -31,12 +31,12 @@
 
 /* METABNB ARTICLE */
 .metabnb__nfts {
-  height: 774px;
+  height: 735px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
+  column-gap: 30px;
   justify-content: center;
-  grid-row: auto;
-  padding: 186px 100px;
+  padding: 100px;
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   border: 1px solid #000000;
   color: #ffffff;
