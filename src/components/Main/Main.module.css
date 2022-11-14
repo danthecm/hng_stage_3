@@ -1,9 +1,30 @@
 .brands {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 264px;
+  padding: 10px 100px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+}
+
+/* TRAVEL CARDS SECTION */
+.travel__cards {
+  margin-bottom: 40px;
+}
+
+.cards__title {
+  padding: 60px 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000000;
+  text-align: center;
+}
+
+.cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 264px;
-    padding: 10px 100px;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px 100px;
+    gap: 24px;
 }

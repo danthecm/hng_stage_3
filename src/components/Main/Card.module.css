@@ -1,0 +1,42 @@
+.card {
+  width: 292px;
+  height: 372px;
+  padding: 15px;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  border: 1px solid #d7d7d7;
+  border-radius: 15px;
+}
+
+.card__img {
+  display: block;
+  margin: auto auto;
+}
+
+.card__caption {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  justify-content: space-between;
+  row-gap: 10px;
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #434343;
+}
+
+.card__price {
+  justify-self: end;
+  font-weight: 700;
+}
+
+.card__caption span:last-child {
+  justify-self: end;
+}
+
+.stars i {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-right: 8px;
+}
