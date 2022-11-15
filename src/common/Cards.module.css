@@ -1,0 +1,27 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px 100px 70px 100px;
+  justify-items: center;
+  gap: 24px;
+}
+
+@media screen and (max-width: 1025px){
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px 50px 70px 50px;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width: 426px){
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}

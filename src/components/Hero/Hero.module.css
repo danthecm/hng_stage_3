@@ -1,10 +1,11 @@
-.header {
+.hero {
   display: grid;
   grid-template-columns: 3fr 1fr;
   column-gap: 50px;
   justify-content: center;
   align-items: center;
   padding: 67px 100px;
+  width: 100%;
 }
 
 .main__content {
@@ -48,30 +49,31 @@
   width: 390px;
   height: 54px;
   padding: 17px 15px;
-  color: #B8B8B8;
+  color: #b8b8b8;
   font-weight: 400;
   font-size: 14px;
   background: rgba(247, 247, 247, 0.1);
-  border: 1px solid #A3A3A3;
+  border: 1px solid #a3a3a3;
   border-radius: 8px 0px 0px 8px;
 }
 
 .search__btn {
   height: 54px;
   border: none;
-  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%);
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.46%);
   border-radius: 0px 8px 8px 0px;
   padding: 17px 80px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .img__section {
   display: grid;
   grid-template-columns: auto auto;
+  justify-content: center;
   gap: 8px;
 }
 
@@ -86,3 +88,101 @@
 /* .header_img {
   display: block;
 } */
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding: 50px 20px;
+  }
+
+  .main__content {
+    row-gap: 40px;
+    margin-bottom: 20px;
+  }
+  .main__heading {
+    font-size: 45px;
+  }
+
+  .search__input {
+    width: 250px;
+  }
+
+  .search__btn {
+    padding: 17px 40px;
+  }
+
+  .main__content__p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .hero {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .main__heading {
+    font-size: 50px;
+    text-align: center;
+  }
+  .search {
+    justify-content: center;
+  }
+  .search__input {
+    width: 390px;
+  }
+
+  .search__btn {
+    padding: 17px 80px;
+  }
+
+  .main__content__p {
+    font-size: 20px;
+  }
+
+  .img__section {
+    gap: 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 426px) {
+  .hero {
+    row-gap: 20px;
+    padding: 30px 10px;
+  }
+
+  .main__heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .search {
+    justify-content: center;
+  }
+  .search__input {
+    width: 200px;
+  }
+
+  .search__btn {
+    padding: 17px 30px;
+  }
+
+  .main__content__p {
+    font-size: 15px;
+  }
+
+  .img__section {
+    grid-template-columns: auto;
+    row-gap: 25px;
+  }
+  .img__section img:first-child {
+    margin-top: 0;
+  }
+  
+  .img__section img:last-child {
+    margin-top: 0;
+  }
+}

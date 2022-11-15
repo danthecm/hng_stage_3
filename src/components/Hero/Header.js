@@ -6,8 +6,8 @@ import house_4 from "../../images/house_4.png"
 
 const Hero = () => {
   return (
-    <header className={classes.header}>
-      <section arial-label="main__content" className={classes.main__content}>
+    <section className={classes.hero}>
+      <article arial-label="main__content" className={classes.main__content}>
         <h1 className={classes.main__heading}>
           Rent a <span className={classes.highlight__bold}>Place</span> away
           from <span className={classes.highlight__bold}>Home</span> in the{" "}
@@ -22,7 +22,7 @@ const Hero = () => {
           <input className={classes.search__input} placeholder="Search for location" />
           <button className={classes.search__btn}>Search</button>
         </div>
-      </section>
+      </article>
 
       <section
         arial-aria-label="image__content"
@@ -32,7 +32,7 @@ const Hero = () => {
           <img src={house_3} className={classes.header__img} alt="special house" />
           <img src={house_4} className={classes.header__img} alt="test house" />
       </section>
-    </header>
+    </section>
   );
 };
 export default Hero;

@@ -1,11 +1,23 @@
 .brands {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 264px;
   padding: 10px 100px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+}
+
+.brands img {
+  justify-self: center;
+}
+
+.brands img:first-child {
+  justify-self: start;
+}
+
+.brands img:last-child {
+  justify-self: end;
 }
 
 /* TRAVEL CARDS SECTION */
@@ -80,4 +92,108 @@
 .metabnb__img {
   width: 704px;
   height: 574.85px;
+}
+
+
+@media screen  and (max-width: 1025px) {
+  .brands {
+    padding: 10px 50px;
+  }
+
+  .cards__title {
+    font-size: 40px;
+  }
+
+  .metabnb__nfts {
+    grid-template-columns: 1fr 1.5fr;
+    padding: 50px;
+  }
+
+  .metabnb__img {
+    height: 670px;
+    width: 540px;
+  }
+
+  .learn__more__btn {
+    margin-top: -205px;
+  }
+  .metabnb__description {
+    margin-top: -125px;
+  }
+  
+}
+
+@media screen  and (max-width: 769px) {
+  .brands {
+    padding: 10px 20px;
+  }
+  .brands img{
+    width: 200px;
+    height: 50px;
+  }
+
+  .cards__title {
+    padding: 20px;
+    font-size: 35px;
+  }
+
+  .metabnb__nfts {
+    grid-template-columns: auto;
+    padding: 50px;
+    height: 800px;
+  }
+  .metabnb__description {
+    max-width: 100%;
+  }
+
+  .metabnb__img {
+    height: 470px;
+    width: 540px;
+  }
+  .learn__more__btn {
+    margin-top: 20px;
+  }
+  .metabnb__description {
+    margin-top: 20px;
+  }
+}
+
+
+@media screen  and (max-width: 426px) {
+  .brands {
+    grid-template-columns: 1fr;
+    padding: 10px 20px;
+  }
+  .brands img{
+    justify-self: center !important;
+    margin: 10px 0;
+  }
+
+  .cards__title {
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .metabnb__nfts {
+    grid-template-columns: auto;
+    padding: 20px;
+    height: 900px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .matabnb__title {
+    font-size: 30px;
+  }
+
+  .metabnb__img {
+    height: 370px;
+    max-width: 400px;
+  }
+  .learn__more__btn {
+    margin: 10px auto;
+  }
+  .metabnb__description {
+    margin-top: 10px;
+  }
 }
