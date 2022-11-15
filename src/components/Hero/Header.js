@@ -1,10 +1,10 @@
-import classes from "./Header.module.css";
+import classes from "./Hero.module.css";
 import house_1 from "../../images/house_1.png"
 import house_2 from "../../images/house_2.png"
 import house_3 from "../../images/house_3.png"
 import house_4 from "../../images/house_4.png"
 
-const Header = () => {
+const Hero = () => {
   return (
     <header className={classes.header}>
       <section arial-label="main__content" className={classes.main__content}>
@@ -35,4 +35,4 @@ const Header = () => {
     </header>
   );
 };
-export default Header;
+export default Hero;

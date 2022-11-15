@@ -4,6 +4,11 @@ body {
   font-family: "Red Rose", cursive;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 ul {
   list-style-type: none;
 }

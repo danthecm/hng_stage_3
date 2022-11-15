@@ -6,11 +6,11 @@ const Footer = () => {
     <footer className={classes.footer}>
       <section className={classes.footer__main}>
         <article>
-          <img src={footer__logo} />
+          <img alt="metabnb logo" src={footer__logo} />
           <div className={classes.social__icons}>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-twitter"></i>
+            <i className="bi bi-facebook"></i>
+            <i className="bi bi-instagram"></i>
+            <i className="bi bi-twitter"></i>
           </div>
         </article>
         <article className={classes.footer__section}>

@@ -13,7 +13,7 @@ import house_7 from "../../images/houses/house_7.png";
 import house_8 from "../../images/houses/house_8.png";
 import metabnb_img from "../../images/metabnb_img.png";
 
-import Card from "./Card";
+import Card from "../../common/Card";
 
 const Main = () => {
   return (
