@@ -79,3 +79,9 @@
   margin: auto auto;
  }
 }
+
+@media screen and (max-width: 426px) {
+ .navbar  {
+  padding: 20px 10px 10px 10px;
+}
+}
