@@ -16,3 +16,9 @@ ul {
 button:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 769px) {
+  .mobile_hidden {
+    display: none !important;
+   }
+}

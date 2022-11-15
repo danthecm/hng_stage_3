@@ -1,11 +1,12 @@
 import classes from "./Navbar.module.css";
 import logo from "../../images/logo.png";
 import Modal from "../../components/Modal/Modal";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const Navbar = (props) => {
   const [showModal, setShowModal] = useState(false);
-  const [showNav, setShowNav] = useState(false);
+  const nav_list = useRef()
+  const nav_btn = useRef()
 
   const connectBtnHandler = () => {
     setShowModal(true);
@@ -15,9 +16,11 @@ const Navbar = (props) => {
     setShowModal(false);
   };
 
-  const toggleNavHandler = () => {
-    setShowNav((state) => !state);
-  };
+  const toggleNavHandler = (e) => {
+    console.log(e.target)
+    nav_list.current.classList.toggle("mobile_hidden")
+    nav_btn.current.classList.toggle("mobile_hidden")
+  }
 
   return (
     <>
@@ -30,27 +33,21 @@ const Navbar = (props) => {
             <div className={classes.buger}></div>
             <div className={classes.buger}></div>
           </div>
+
         </div>
-        {showNav && (
-          <>
-            <ul className={classes.nav__items}>
-              <li className={classes.nav__item}>
-                <a href="/">Home</a>
-              </li>
-              <li className={classes.nav__item}>
-                <a href="/place2stay">Place to stay</a>
-              </li>
-              <li className={classes.nav__item}>NFTs</li>
-              <li className={classes.nav__item}>Community</li>
-            </ul>
-            <button
-              onClick={connectBtnHandler}
-              className={classes.btn__connect}
-            >
-              Connect wallet
-            </button>{" "}
-          </>
-        )}
+        <ul ref={nav_list} className={`${classes.nav__items} mobile_hidden`}>
+          <li className={classes.nav__item}>
+            <a href="/">Home</a>
+          </li>
+          <li className={classes.nav__item}>
+            <a href="/place2stay">Place to stay</a>
+          </li>
+          <li className={classes.nav__item}>NFTs</li>
+          <li className={classes.nav__item}>Community</li>
+        </ul>
+        <button ref={nav_btn} onClick={connectBtnHandler} className={`${classes.btn__connect} mobile_hidden`}>
+          Connect wallet
+        </button>
       </nav>
     </>
   );

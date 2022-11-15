@@ -1,6 +1,6 @@
 .navbar {
   display: grid;
-  grid-template-columns: 1fr 1.2fr .8fr;
+  grid-template-columns: 1fr 1.4fr .8fr;
   padding: 43px 100px;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,7 @@
 .nav__items {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  column-gap: 28px;
+  column-gap: 24px;
   text-align: center;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .hanger {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr;
   row-gap: 10px;
   justify-items: end;
@@ -78,6 +78,10 @@
   display: block;
   margin: auto auto;
  }
+ .hanger {
+  display: grid;
+ }
+ 
 }
 
 @media screen and (max-width: 426px) {
