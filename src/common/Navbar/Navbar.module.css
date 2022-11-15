@@ -26,3 +26,29 @@
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
   border-radius: 10px;
 }
+
+@media screen and (max-width: 1025px) {
+  .navbar {
+    padding: 43px 50px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+  }
+}
+
+
+@media screen and (max-width: 769px) {
+ .navbar { 
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center; 
+  row-gap: 20px;
+}
+.nav__items {
+  grid-template-columns: auto;
+  row-gap: 10px;
+}
+ .btn__connect {
+  display: block;
+  margin: auto auto;
+ }
+}

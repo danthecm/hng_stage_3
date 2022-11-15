@@ -111,7 +111,7 @@
 
   .metabnb__img {
     height: 670px;
-    width: 540px;
+    max-width: 95%;
   }
 
   .learn__more__btn {
@@ -148,7 +148,7 @@
 
   .metabnb__img {
     height: 470px;
-    width: 540px;
+    /* width: 540px; */
   }
   .learn__more__btn {
     margin-top: 20px;
@@ -188,7 +188,6 @@
 
   .metabnb__img {
     height: 370px;
-    max-width: 400px;
   }
   .learn__more__btn {
     margin: 10px auto;
