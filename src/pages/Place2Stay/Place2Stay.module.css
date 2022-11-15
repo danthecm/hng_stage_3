@@ -1,0 +1,27 @@
+.nav__list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto 1.2fr;
+  column-gap: 48px;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+.nav__item {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #434343;
+}
+
+.location {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  width: 161px;
+  padding: 14px;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  border: 1px solid #b4b4b4;
+  border-radius: 8px;
+}
+
+

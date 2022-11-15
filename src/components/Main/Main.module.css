@@ -22,13 +22,6 @@
   text-align: center;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 20px 100px;
-  gap: 24px;
-}
-
 /* METABNB ARTICLE */
 .metabnb__nfts {
   height: 735px;

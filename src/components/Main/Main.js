@@ -14,6 +14,7 @@ import house_8 from "../../images/houses/house_8.png";
 import metabnb_img from "../../images/metabnb_img.png";
 
 import Card from "../../common/Card";
+import Cards from "../../common/Cards";
 
 const Main = () => {
   return (
@@ -27,16 +28,16 @@ const Main = () => {
         <h2 className={classes.cards__title}>
           Inspiration for your next adventure
         </h2>
-        <ul className={classes.cards}>
-          <Card src={house_1} className={classes.card} alt="Desert House" />
-          <Card src={house_2} className={classes.card} alt="Desert House" />
-          <Card src={house_3} className={classes.card} alt="Desert House" />
-          <Card src={house_4} className={classes.card} alt="Desert House" />
-          <Card src={house_5} className={classes.card} alt="Desert House" />
-          <Card src={house_6} className={classes.card} alt="Desert House" />
-          <Card src={house_7} className={classes.card} alt="Desert House" />
-          <Card src={house_8} className={classes.card} alt="Desert House" />
-        </ul>
+        <Cards>
+          <Card src={house_1} alt="Desert House" />
+          <Card src={house_2} alt="Desert House" />
+          <Card src={house_3} alt="Desert House" />
+          <Card src={house_4} alt="Desert House" />
+          <Card src={house_5} alt="Desert House" />
+          <Card src={house_6} alt="Desert House" />
+          <Card src={house_7} alt="Desert House" />
+          <Card src={house_8} alt="Desert House" />
+        </Cards>
       </article>
       <article className={classes.metabnb__nfts}>
         <div className={classes.metabnb__main}>
