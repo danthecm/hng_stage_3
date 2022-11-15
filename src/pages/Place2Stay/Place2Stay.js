@@ -34,7 +34,7 @@ const Place2Stay = () => {
           <li className={classes.nav__item}>Farm</li>
           <li className={classes.nav__item + " " + classes.location}>
             <p>Location</p>
-            <i class="bi bi-sliders2"></i>
+            <i className="bi bi-sliders2"></i>
           </li>
         </ul>
       </nav>
