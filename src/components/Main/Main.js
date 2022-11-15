@@ -49,7 +49,7 @@ const Main = () => {
           <button className={classes.learn__more__btn}>Learn more</button>
         </div>
         <div>
-            <img src={metabnb_img} alt="Metabnb NFTs"/>
+          <img src={metabnb_img} alt="Metabnb NFTs" />
         </div>
       </article>
     </main>

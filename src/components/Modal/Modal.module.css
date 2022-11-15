@@ -1,0 +1,83 @@
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.modal {
+  position: fixed;
+  width: 600px;
+  height: 326px;
+  left: 28%;
+  top: 25%;
+  background: #f8f9fa;
+  border-radius: 16px;
+  z-index: 2;
+}
+
+.modal__heading {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cfd8dc;
+  padding: 24px 32px;
+}
+
+.modal__title {
+  display: flex;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.cancel__icon {
+  cursor: pointer;
+  text-align: right;
+}
+
+.modal__content {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  padding: 32px;
+}
+
+.wallets__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.wallet__list {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 16px;
+  padding-top: 16px;
+}
+
+.wallet__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  width: 536px;
+  height: 68px;
+  background: #f8f9fa;
+  border: 1px solid #cfd8dc;
+  border-radius: 12px;
+}
+
+.wallet__item__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.right__pointer {
+  text-align: right;
+}
