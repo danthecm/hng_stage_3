@@ -81,3 +81,55 @@
 .right__pointer {
   text-align: right;
 }
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 769px) {
+  .modal {
+    width: 400px;
+    height: 280px;
+  }
+
+  .modal__title {
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .modal__content {
+    padding: 10px;
+  }
+
+  .wallet__item {
+    padding: 10px;
+    width: 95%;
+    height: 58px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .modal {
+    width: 300px;
+    height: 280px;
+    left: 15%;
+  }
+
+  .modal__title {
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .modal__content {
+    padding: 10px;
+  }
+
+  .wallet__item {
+    padding: 10px;
+    width: 95%;
+    height: 58px;
+  }
+}

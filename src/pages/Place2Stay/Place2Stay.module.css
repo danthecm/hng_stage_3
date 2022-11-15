@@ -25,3 +25,25 @@
 }
 
 
+@media screen and (max-width:769px) {
+  .nav__list {
+    grid-template-columns: auto auto auto auto auto;
+    row-gap: 28px;
+    padding: 50px;
+  }
+  
+}
+
+@media screen and (max-width:426px) {
+  .nav__list {
+    grid-template-columns: auto auto;
+    row-gap: 18px;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .location {
+   justify-self: center;
+   grid-column: span 2;
+  }
+}
