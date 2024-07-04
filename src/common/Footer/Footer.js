@@ -43,7 +43,7 @@ const Footer = () => {
           </ul>
         </article>
       </section>
-      <p className={classes.copyright}> &copy; 2022 Metabnb</p>
+      <p className={classes.copyright}> &copy; 2024 Metabnb</p>
     </footer>
   );
 };
